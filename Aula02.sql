@@ -13,3 +13,16 @@ CREATE TABLE produtos (
     descProduto VARCHAR (100),
     valor DECIMAL 
 );
+
+CREATE TABLE categoria (
+	idCategoria INT AUTO_INCREMENT PRIMARY KEY,
+    descCategoria VARCHAR(100)
+);
+
+CREATE TABLE funcionarios (
+	idFuncionarios INT AUTO_INCREMENT PRIMARY KEY,
+    nomeFuncionario VARCHAR(70),
+    emailFuncionario VARCHAR(70),
+    cpf VARCHAR(50),
+	endereco VARCHAR(100)
+);
