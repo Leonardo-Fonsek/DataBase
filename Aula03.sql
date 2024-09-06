@@ -1,0 +1,14 @@
+CREATE DATABASE Biblioteca;
+USE Biblioteca;
+
+CREATE TABLE Autor(
+	ID_Autor INT AUTO_INCREMENT PRIMARY KEY,
+    nomeAutor VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Livro(
+	ID_Livro INT AUTO_INCREMENT PRIMARY KEY,
+    tituloLivro VARCHAR(200) NOT NULL,
+    IDautor INT,
+    FOREIGN KEY (IDautor) REFERENCES Autor(ID_Autor)
+);
